@@ -1,0 +1,20 @@
+Design and implement a Client-Server system that uses TCP sockets to do the following:
+a. The client initiates communication with a Server by sending the server
+it’s name. (Choose some name for your client process). The Server 
+remembers this name for the entire duration of the communication
+session.
+b. The client then runs in an infinite loop where it accepts a line of input
+from the user. The user is expected to enter a string consisting of two
+numbers and a simple arithmetic operation (separated by spaces), for
+example: “12 + 42” or “3.24 45” or “4.5 / -6” . If the input is not correctly
+formatted, a warning is displayed to the user. If correctly formatted, the
+Client sends this string to the Server.
+c. The Server runs an infinite loop where it keeps waiting for requests
+from this client. Upon receiving a request, the server prints the received
+message, computes the answer by performing the arithmetic operation
+and sends it back as a string. The Client prints the answer it received
+from the server.
+d. When the user wishes to stop, they enter “q”. The client process
+forwards the “q” to the Server upon which the server ends the
+communication session and prints “Session ended”. The Client
+processes stops.
