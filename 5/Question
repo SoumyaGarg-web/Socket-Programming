@@ -1,0 +1,16 @@
+Design such a multi-Client system to implement a “Chat Room” as follows:
+a. The Client process acts like a chat window. It takes user input, sends
+appropriate requests to the Server, and displays the messages sent by
+the server to the human user.
+b. The Server process acts like a chat room manager. It allows client
+processes to login to the chat room (each client needs to have a
+unique name). The server keeps track of all the clients that are
+currently logged in. Whenever any interesting event happens, (such as
+new user logging in or leaving the chat room) the status is broadcast to
+all connected clients. Also, whatever each user types is broadcast to all
+clients.
+c. At the beginning, the user is requested for a “login name”. The client
+process then sends a login request to the chat room (Server) with this
+name.
+d. After logging in, whatever lines the user types is broadcast to all clients
+along with the sender’s name.
