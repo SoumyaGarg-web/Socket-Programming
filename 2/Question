@@ -1,0 +1,18 @@
+//
+Design and implement a Client-Server system that uses UDP sockets to do
+the following:
+a. The client sends the server a request. The request string can either be:
+“SEND_DATE” or “SEND_TIME”.
+b. The server runs in a infinite loop where it keeps waiting for requests.
+Whenever it sees a request, it responds by sending either the current
+DATE or the current TIME in (HH:MM:SS) format as specified in the
+request.
+c. When the Client receives a response, it prints it.
+d. The Client runs in a loop where it generates multiple such requests,
+and the time between successive requests varies randomly between 1-
+2 seconds. HINT: You can use the following line of code to generate a
+random amount of delay, uniformly distributed between 1-2 seconds:
+
+import time, random
+...
+time.sleep(random.uniform(1,2))
